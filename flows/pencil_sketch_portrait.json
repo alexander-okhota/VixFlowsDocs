@@ -254,55 +254,6 @@
       "title": "Scale Image to Total Pixels"
     }
   },
-  "40": {
-    "inputs": {
-      "state": true,
-      "display_name": "Use Gemini instead of Ollama",
-      "optional": true,
-      "advanced": true,
-      "order": 95,
-      "custom_id": "vision_provider",
-      "hidden": false,
-      "input_off_state": [
-        "43",
-        0
-      ],
-      "input_on_state": [
-        "41",
-        0
-      ]
-    },
-    "class_type": "VixUiCheckboxLogic",
-    "_meta": {
-      "title": "VixUI-CheckboxLogic"
-    }
-  },
-  "41": {
-    "inputs": {
-      "prompt": [
-        "62",
-        0
-      ],
-      "safety_settings": "BLOCK_NONE",
-      "response_type": "text",
-      "model": "gemini-2.0-flash-lite-001",
-      "api_key": "",
-      "proxy": "",
-      "system_instruction": "",
-      "error_fallback_value": "",
-      "seed": 1,
-      "temperature": -0.05,
-      "num_predict": 0,
-      "image_1": [
-        "37",
-        0
-      ]
-    },
-    "class_type": "Ask_Gemini",
-    "_meta": {
-      "title": "Ask Gemini"
-    }
-  },
   "43": {
     "inputs": {
       "query": [
@@ -311,7 +262,7 @@
       ],
       "debug": "enable",
       "url": "http://127.0.0.1:11434",
-      "model": "gemma3:12b-it-qat",
+      "model": "",
       "keep_alive": 0,
       "format": "text",
       "seed": 1,
@@ -328,8 +279,8 @@
   "46": {
     "inputs": {
       "name": "pencil_sketch_portrait",
-      "display_name": "Pencil Sketch Portrait",
-      "description": "Sketch portrait using pencil",
+      "display_name": "Стиль \"Pencil Sketch\"",
+      "description": "Персонажный портрет в скетч стилистике",
       "author": "Datou",
       "homepage": "https://openart.ai/workflows/datou/portrait-pencil-sketch/W0yMzpiK9dTF0p13V0JQ",
       "documentation": "",
@@ -521,7 +472,7 @@
         0
       ],
       "string_b": [
-        "40",
+        "43",
         0
       ],
       "delimiter": ", "

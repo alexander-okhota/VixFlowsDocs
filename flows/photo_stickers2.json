@@ -231,7 +231,7 @@
   "517": {
     "inputs": {
       "text": [
-        "584",
+        "519",
         0
       ]
     },
@@ -248,7 +248,7 @@
       ],
       "debug": "enable",
       "url": "http://127.0.0.1:11434",
-      "model": "gemma3:12b-it-qat",
+      "model": "",
       "keep_alive": 0,
       "format": "text",
       "seed": 1,
@@ -342,8 +342,8 @@
   "574": {
     "inputs": {
       "name": "photo_stickers2",
-      "display_name": "Photo Stickers 2",
-      "description": "Stickers from person photo",
+      "display_name": "Стиль Photo Stickers 2",
+      "description": "Stickers по фотографии человека",
       "author": "Datou",
       "homepage": "https://openart.ai/workflows/datou/stickeryou-simplified-version/diO4RafxrxaqH6RjajjQ",
       "documentation": "https://visionatrix.github.io/VixFlowsDocs/Flows/PhotoStickers2/",
@@ -401,53 +401,6 @@
     "class_type": "SaveImage",
     "_meta": {
       "title": "Save Image"
-    }
-  },
-  "584": {
-    "inputs": {
-      "state": false,
-      "display_name": "Use Gemini for vision instead of Ollama",
-      "optional": true,
-      "advanced": true,
-      "order": 99,
-      "custom_id": "vision_provider",
-      "hidden": false,
-      "input_off_state": [
-        "519",
-        0
-      ],
-      "input_on_state": [
-        "586",
-        0
-      ]
-    },
-    "class_type": "VixUiCheckboxLogic",
-    "_meta": {
-      "title": "VixUI-CheckboxLogic"
-    }
-  },
-  "586": {
-    "inputs": {
-      "prompt": [
-        "592",
-        0
-      ],
-      "safety_settings": "BLOCK_NONE",
-      "response_type": "text",
-      "model": "gemini-2.0-flash-lite-001",
-      "api_key": "",
-      "proxy": "",
-      "system_instruction": "",
-      "error_fallback_value": "",
-      "seed": 1,
-      "image_1": [
-        "590",
-        0
-      ]
-    },
-    "class_type": "Ask_Gemini",
-    "_meta": {
-      "title": "Ask Gemini"
     }
   },
   "588": {
@@ -1103,7 +1056,6 @@
   },
   "622": {
     "inputs": {
-      "text_0": "Boxers, with red boxing gloves, swinging their fists, Stickers, Sticker, chibi:1.5, flat:1.5, (full body:1.5), simple details，empty background, black background, A young woman with long brown hair, light brown skin, dark eyes, and a happy expression, wearing a black collared shirt.\n",
       "text": [
         "621",
         0

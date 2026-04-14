@@ -420,13 +420,13 @@
   },
   "138": {
     "inputs": {
-      "state": false,
+      "state": true,
       "display_name": "Low memory mode",
       "optional": true,
       "advanced": true,
       "order": 99,
       "custom_id": "",
-      "hidden": false
+      "hidden": true
     },
     "class_type": "VixUiCheckbox",
     "_meta": {

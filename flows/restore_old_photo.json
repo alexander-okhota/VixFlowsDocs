@@ -183,7 +183,7 @@
     "inputs": {
       "string_a": "restore and colorize this photo, keep the appearance of the characters unchanged to the greatest extent, eliminate cracks, enhance clarity, achieve ultra-high-definition quality, reversal film photography, hdr,",
       "string_b": [
-        "248",
+        "247",
         0
       ],
       "delimiter": ""
@@ -193,32 +193,9 @@
       "title": "Concatenate"
     }
   },
-  "239": {
-    "inputs": {
-      "prompt": "Generate a flux model drawing prompt for this image, within 130 words. Only describe the content of the image; do not describe the artistic style such as photo, painting, anime, etc. Describe the scene in order from left to right, top to bottom, and from foreground to background, clearly indicating the position of each subject. Do not describe any human features such as gender, skin color, age, or hairstyle. Only describe clothing and reasonably infer the colors of garments based on context. For example, say \"the figure on the left is wearing a red dress\" or \"the figure on the right is in a blue suit with a white shirt.\" Ignore any aging effects in the photo such as speckles or ripples.\n\nOutput only the generated prompt and nothing else.",
-      "safety_settings": "BLOCK_NONE",
-      "response_type": "text",
-      "model": "gemini-2.5-flash",
-      "api_key": "",
-      "proxy": "",
-      "system_instruction": "",
-      "error_fallback_value": "",
-      "seed": 502120398,
-      "temperature": -0.05,
-      "num_predict": 0,
-      "image_1": [
-        "243",
-        0
-      ]
-    },
-    "class_type": "Ask_Gemini",
-    "_meta": {
-      "title": "Ask Gemini"
-    }
-  },
   "241": {
     "inputs": {
-      "default_value": "fp8_e4m3fn",
+      "default_value": "default",
       "possible_values": "[\"default\", \"fp8_e4m3fn\", \"fp8_e4m3fn_fast\", \"fp8_e5m2\"]",
       "display_name": "Diffusion precision",
       "optional": true,
@@ -244,8 +221,8 @@
   "244": {
     "inputs": {
       "name": "restore_old_photo",
-      "display_name": "Restore Old Photo",
-      "description": "Restore Old Damaged Photo",
+      "display_name": "Восстановить Фотографию",
+      "description": "Востанавливает старые и испорченные фотографии",
       "author": "Datou",
       "homepage": "https://openart.ai/workflows/datou/restore-old-and-damaged-photosflux-kontext/yXttxLAnquPMZ9feVI7g",
       "documentation": "",
@@ -301,7 +278,7 @@
       "query": "Generate a flux model drawing prompt for this image, within 130 words. Only describe the content of the image; do not describe the artistic style such as photo, painting, anime, etc. Describe the scene in order from left to right, top to bottom, and from foreground to background, clearly indicating the position of each subject. Do not describe any human features such as gender, skin color, age, or hairstyle. Only describe clothing and reasonably infer the colors of garments based on context. For example, say \"the figure on the left is wearing a red dress\" or \"the figure on the right is in a blue suit with a white shirt.\" Ignore any aging effects in the photo such as speckles or ripples.\n\nOutput only the generated prompt and nothing else.",
       "debug": "enable",
       "url": "http://127.0.0.1:11434",
-      "model": "gemma3:12b-it-qat",
+      "model": "",
       "keep_alive": 0,
       "format": "text",
       "seed": 1,
@@ -313,29 +290,6 @@
     "class_type": "OllamaVision",
     "_meta": {
       "title": "Ollama Vision"
-    }
-  },
-  "248": {
-    "inputs": {
-      "state": true,
-      "display_name": "Use Gemini instead of Ollama",
-      "optional": true,
-      "advanced": true,
-      "order": 95,
-      "custom_id": "vision_provider",
-      "hidden": false,
-      "input_off_state": [
-        "247",
-        0
-      ],
-      "input_on_state": [
-        "239",
-        0
-      ]
-    },
-    "class_type": "VixUiCheckboxLogic",
-    "_meta": {
-      "title": "VixUI-CheckboxLogic"
     }
   }
 }

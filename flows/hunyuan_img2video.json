@@ -325,22 +325,6 @@
       "title": "VixUI-List"
     }
   },
-  "98": {
-    "inputs": {
-      "filename_prefix": "ComfyUI",
-      "codec": "vp9",
-      "fps": 24,
-      "crf": 31,
-      "images": [
-        "99",
-        0
-      ]
-    },
-    "class_type": "SaveWEBM",
-    "_meta": {
-      "title": "SaveWEBM"
-    }
-  },
   "99": {
     "inputs": {
       "state": false,
@@ -378,6 +362,28 @@
     "class_type": "PrimitiveStringMultiline",
     "_meta": {
       "title": "WF_SUBFLOWS"
+    }
+  },
+  "104": {
+    "inputs": {
+      "frame_rate": 24,
+      "loop_count": 0,
+      "filename_prefix": "ComfyUI",
+      "format": "video/h264-mp4",
+      "pix_fmt": "yuv420p",
+      "crf": 10,
+      "save_metadata": true,
+      "trim_to_audio": false,
+      "pingpong": false,
+      "save_output": true,
+      "images": [
+        "99",
+        0
+      ]
+    },
+    "class_type": "VHS_VideoCombine",
+    "_meta": {
+      "title": "Video Combine 🎥🅥🅗🅢"
     }
   }
 }
